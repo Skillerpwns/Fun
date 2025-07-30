@@ -192,7 +192,20 @@
         // Function to load the packing list from local storage or use initial list
         function loadPackingList() {
             const savedList = localStorage.getItem('carnivalPackingList');
-            packingList = savedList ? JSON.parse(savedList) : JSON.parse(JSON.stringify(initialPackingList)); // Deep copy initial list
+            // Attempt to parse saved list, if null or invalid, use a deep copy of initialPackingList
+            try {
+                packingList = savedList ? JSON.parse(savedList) : JSON.parse(JSON.stringify(initialPackingList));
+            } catch (e) {
+                // Fallback if savedList is corrupted
+                console.error("Error parsing saved packing list, resetting to initial list:", e);
+                packingList = JSON.parse(JSON.stringify(initialPackingList));
+            }
+
+            // Ensure packingList is not empty after load
+            if (!packingList || packingList.length === 0) {
+                packingList = JSON.parse(JSON.stringify(initialPackingList));
+                savePackingList(); // Save this initial state if it was just reset
+            }
         }
 
         // Function to save the packing list to local storage
