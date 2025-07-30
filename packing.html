@@ -216,6 +216,11 @@
         // Function to render the packing list to the HTML
         function renderPackingList() {
             const container = document.getElementById('packingListContainer');
+            // Added a check to ensure the container element exists before trying to render
+            if (!container) {
+                console.error("Packing list container not found!");
+                return; // Exit if container is not found
+            }
             container.innerHTML = ''; // Clear existing content
 
             // Group items by category
@@ -286,11 +291,10 @@
         // Event listener for the reset button
         document.getElementById('resetListBtn').addEventListener('click', resetList);
 
-        // Initial load and render when the page loads
-        window.onload = () => {
-            loadPackingList();
-            renderPackingList();
-        };
+        // Initial load and render: Call functions directly to ensure immediate execution
+        // This replaces window.onload to ensure the list renders as soon as possible.
+        loadPackingList();
+        renderPackingList();
     </script>
 </body>
 </html>
