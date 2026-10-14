@@ -1,0 +1,119 @@
+{
+  "origin": {
+    "label": "Apollo, PA 15613",
+    "lat": 40.5815,
+    "lng": -79.5664
+  },
+  "stores": [
+    {
+      "id": "zen-leaf-new-kensington",
+      "name": "Zen Leaf - New Kensington",
+      "address": "215 Tarentum Bridge Rd, New Kensington, PA 15068",
+      "lat": 40.5885,
+      "lng": -79.7487,
+      "website": "https://zenleafdispensaries.com/",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Opened Sept 2022 per TribLive."
+    },
+    {
+      "id": "sunnyside-new-kensington",
+      "name": "Sunnyside - New Kensington",
+      "address": "4 Kensington Square, New Kensington, PA 15068",
+      "lat": 40.57,
+      "lng": -79.752,
+      "website": "https://www.sunnyside.shop/",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Cresco Labs store, formerly CY+."
+    },
+    {
+      "id": "solevo-greensburg",
+      "name": "Solevo Wellness - Greensburg",
+      "address": "305 E Pittsburgh St, Greensburg, PA 15601",
+      "lat": 40.3029,
+      "lng": -79.5372,
+      "website": "https://www.solevowellness.com/menu/",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Directory listing points to solevowellness.com/menu/."
+    },
+    {
+      "id": "curaleaf-greensburg",
+      "name": "Curaleaf - Greensburg",
+      "address": "5133 Lincoln Hwy, Greensburg, PA 15601",
+      "lat": 40.283,
+      "lng": -79.49,
+      "website": "https://curaleaf.com/",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Route 30 near Westmoreland Mall."
+    },
+    {
+      "id": "maitri-greensburg",
+      "name": "Maitri Medicinals - Greensburg",
+      "address": "1075 S Main St, Greensburg, PA 15601",
+      "lat": 40.2865,
+      "lng": -79.5455,
+      "website": "",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Opened Oct 2021 per TribLive. Confirm it's still open."
+    },
+    {
+      "id": "rise-monroeville",
+      "name": "RISE - Monroeville",
+      "address": "3838 William Penn Hwy, Monroeville, PA 15146",
+      "lat": 40.432,
+      "lng": -79.76,
+      "website": "https://risecannabis.com/",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Green Thumb Industries store, opened 2020."
+    },
+    {
+      "id": "healing-center-monroeville",
+      "name": "The Healing Center - Monroeville",
+      "address": "130 Mall Circle Dr, Monroeville, PA 15146",
+      "lat": 40.4294,
+      "lng": -79.793,
+      "website": "",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Only found 2018 plans for this one. Confirm it's open before setting it up."
+    },
+    {
+      "id": "ayr-indiana",
+      "name": "Ayr Wellness - Indiana",
+      "address": "2244 Oakland Ave, Indiana, PA 15701",
+      "lat": 40.632,
+      "lng": -79.142,
+      "website": "",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Opened July 2022, first dispensary in Indiana County."
+    },
+    {
+      "id": "ayr-richland",
+      "name": "Ayr Wellness - Richland (Gibsonia)",
+      "address": "Northtowne Square, Gibsonia, PA 15044",
+      "lat": 40.629,
+      "lng": -79.96,
+      "website": "",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Listed in a 2022 TribLive roundup."
+    },
+    {
+      "id": "sunnyside-butler",
+      "name": "Sunnyside - Butler",
+      "address": "201 Pillow St, Butler, PA 16001",
+      "lat": 40.852,
+      "lng": -79.912,
+      "website": "https://www.sunnyside.shop/",
+      "menu_url": "",
+      "enabled": false,
+      "notes": "Cresco Labs store, on the state's 2023 dispensary list."
+    }
+  ]
+}

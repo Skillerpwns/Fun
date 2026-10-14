@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PA Dispensary Deals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <div>
+        <h1>Dispensary Deals</h1>
+        <p class="sub" id="subtitle">Loading menus…</p>
+      </div>
+      <span class="fresh" id="freshness" hidden></span>
+    </div>
+    <nav class="wrap tabs" id="tabs" aria-label="Views">
+      <button data-view="deals" class="active">Deals</button>
+      <button data-view="cheapest">Cheapest</button>
+      <button data-view="new">New</button>
+      <button data-view="watch">Watchlist <span class="count" id="watch-count" hidden></span></button>
+      <button data-view="all">Everything</button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search a strain, brand or product…" autocomplete="off">
+      <div class="chips" id="categories" role="group" aria-label="Category"></div>
+      <div class="row">
+        <label>Sort
+          <select id="sort">
+            <option value="auto">Best for this view</option>
+            <option value="ppg">Price per gram</option>
+            <option value="price">Lowest price</option>
+            <option value="discount">Biggest discount</option>
+            <option value="thc">Highest THC</option>
+            <option value="newest">Newest</option>
+            <option value="distance">Nearest store</option>
+          </select>
+        </label>
+        <label>Within
+          <select id="distance">
+            <option value="">Any distance</option>
+            <option value="10">10 mi</option>
+            <option value="15">15 mi</option>
+            <option value="20">20 mi</option>
+            <option value="30">30 mi</option>
+          </select>
+        </label>
+        <label>Type
+          <select id="strain-type">
+            <option value="">Any</option>
+            <option value="indica">Indica</option>
+            <option value="sativa">Sativa</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="cbd">CBD</option>
+          </select>
+        </label>
+        <label class="check"><input type="checkbox" id="sale-only"> On sale</label>
+      </div>
+      <details class="stores" id="stores-panel">
+        <summary>Stores <span id="stores-summary"></span></summary>
+        <ul id="store-list"></ul>
+      </details>
+    </section>
+
+    <section id="watch-editor" class="watch-editor" hidden>
+      <form id="watch-form">
+        <input id="watch-input" placeholder="Add a strain to watch, e.g. GMO, Blue Dream" autocomplete="off">
+        <button type="submit">Watch</button>
+      </form>
+      <div class="chips" id="watch-chips"></div>
+    </section>
+
+    <p class="summary" id="summary"></p>
+    <div id="results"></div>
+    <button id="more" class="more" hidden>Show more</button>
+  </main>
+
+  <footer class="wrap foot">
+    Prices come from each store's online menu and can be out of date. Check the store's menu before you go.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
