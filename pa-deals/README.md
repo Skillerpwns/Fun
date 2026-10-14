@@ -61,6 +61,8 @@ playwright install chromium
 ```
 
 Every time you open a new terminal, run the `activate` line again before using the tool.
+When it's active your prompt starts with `(.venv)`. If you see `command not found: python`,
+it isn't active yet (a Mac only has `python3` until you activate it).
 
 **3. Point it at each store's menu**
 
